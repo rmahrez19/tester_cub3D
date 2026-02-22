@@ -1,6 +1,9 @@
 #!/bin/bash
 
-# Configuration (depuis la racine du projet)
+# Détecte le dossier où le script a été cloné (ex: "tester_cub3D")
+SCRIPT_DIR=$(dirname "$0")
+
+# Exécutable à la racine du projet principal
 EXEC="./Cub3D"
 TEMP_OUT=".test_out"
 TIMEOUT=0.4
@@ -14,7 +17,6 @@ RESET=$'\033[0m'
 
 if [ ! -f "$EXEC" ]; then
     echo -e "${RED}Erreur : l'exécutable $EXEC est introuvable.${RESET}"
-    echo "Assure-toi d'avoir compilé le projet avec 'make'."
     exit 1
 fi
 
@@ -26,12 +28,20 @@ test_directory() {
     local dir=$1
     local expected=$2
 
-    for map in "$dir"/*; do
+    # On cherche les maps dans le dossier cloné
+    local target_dir="$SCRIPT_DIR/$dir"
+
+    if [ ! -d "$target_dir" ]; then
+        echo "Dossier $target_dir introuvable."
+        return
+    fi
+
+    for map in "$target_dir"/*; do
         [ -f "$map" ] || continue
 
         map_name=$(basename "$map")
 
-        # On lance depuis la racine
+        # Lancement de Cub3D depuis la racine
         $EXEC "$map" > "$TEMP_OUT" 2>&1 &
         PID=$!
 
@@ -61,8 +71,9 @@ test_directory() {
     done
 }
 
-test_directory "data/map/good" "good"
+# Lance les tests sur les dossiers map/good et map/bad présents dans le repo cloné
+test_directory "map/good" "good"
 echo -e "${BLUE}-----------------------------------------------------------------------------------------${RESET}"
-test_directory "data/map/bad" "bad"
+test_directory "map/bad" "bad"
 
 rm -f "$TEMP_OUT"
