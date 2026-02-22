@@ -4,7 +4,7 @@
 SCRIPT_DIR=$(dirname "$0")
 
 # Exécutable à la racine du projet principal
-EXEC="./Cub3D"
+EXEC="./cub3D"
 TEMP_OUT=".test_out"
 TIMEOUT=0.4
 
