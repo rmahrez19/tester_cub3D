@@ -1,0 +1,11 @@
+WE  data/texture/wall_west.xpm
+NO  data/texture/wall_north.xpm
+SO  data/texture/wall_south.xpm
+EA  data/texture/wall_east.xpm
+
+F 20,20,20
+C 200,200,200
+
+111111111111111111111
+1000000000000000000E1
+111111111111111111111

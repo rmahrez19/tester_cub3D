@@ -1,0 +1,62 @@
+NO data/texture/wall_north.xpm
+
+
+
+SO data/texture/wall_south.xpm
+
+
+
+
+WE                      data/texture/wall_west.xpm
+
+
+
+
+
+
+EA                          data/texture/wall_east.xpm
+
+F 20,20,20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+C 200,200,200
+
+11111
+10001
+10001
+10s01
+10001
+10001
+11D11
+10001
+10X0111
+10N0D01
+1000111
+10C01
+11111
