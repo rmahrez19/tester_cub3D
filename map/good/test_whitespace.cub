@@ -6,7 +6,7 @@
 
 
 
-NO data/texture/wall_north.xpm
+NO tester_cub3D/data/texture/wall_north.xpm
 
 
 
@@ -15,9 +15,9 @@ NO data/texture/wall_north.xpm
 
 
 
-SO data/texture/wall_south.xpm
-                        WE data/texture/wall_west.xpm
-        EA data/texture/wall_east.xpm
+SO tester_cub3D/data/texture/wall_south.xpm
+                        WE tester_cub3D/data/texture/wall_west.xpm
+        EA tester_cub3D/data/texture/wall_east.xpm
 
         F 20,           20,             20
 C 200,          200,200

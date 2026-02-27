@@ -1,10 +1,10 @@
 F 139,99,58
 C 171,154,137
 
-WE  data/texture/wall_west.xpm
-NO  data/texture/wall_north.xpm
-SO  data/texture/wall_south.xpm
-EA  data/texture/wall_east.xpm
+WE  tester_cub3D/data/texture/wall_west.xpm
+NO  tester_cub3D/data/texture/wall_north.xpm
+SO  tester_cub3D/data/texture/wall_south.xpm
+EA  tester_cub3D/data/texture/wall_east.xpm
 
 1111111111111111111
 1001001001001001001

@@ -1,0 +1,17 @@
+NO tester_cub3D/data/texture/wall_north.xpm
+SO tester_cub3D/data/texture/wall_south.xpm
+WE tester_cub3D/data/texture/wall_west.xpm
+EA tester_cub3D/data/texture/wall_east.xpm
+
+F 20,20,20
+C 200,200,200
+
+          1111111
+         11000001
+        110011101
+       11001   11
+      110011   11111
+      10001     1001
+      10N01111111001
+      11000000000001
+       1111111111111

@@ -1,7 +1,7 @@
-WE  data/texture/wall_west.xpm
-NO  data/texture/wall_north.xpm
-SO  data/texture/wall_south.xpm
-EA  data/texture/wall_east.xpm
+WE  tester_cub3D/data/texture/wall_west.xpm
+NO  tester_cub3D/data/texture/wall_north.xpm
+SO  tester_cub3D/data/texture/wall_south.xpm
+EA  tester_cub3D/data/texture/wall_east.xpm
 
 F 0,0,0
 C 0,0,0
